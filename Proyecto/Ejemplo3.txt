@@ -1,0 +1,24 @@
+SUPERBEG.                                       /* Principio de programa
+WAIT(3).                                        /* El robot espera 3 unidades de tiempo
+ADD(ply.lex).                                   /* Librerías externas
+FOW().                                          /* El robot puede avanzar
+VAR(bool:bandera).                              /* Definir variables
+VAR(INT:contador).                              /* Definir variables
+bandera =: False.                               /* Asignación de valores
+contador =: 0.                                  /* Asignación de valores                    
+while (bandera == False) BEGIN                  /* Inicio ciclo while hasta que bandera sea false
+    contador =: contador + 1.                   /* Asignación de valores
+    if (contador%2 == 0) BEGIN                  /* Inicio condición si contador es par
+        LEFT().                                 /* El robot dobla en sentido anti horario
+    END                                         /* Fin condición
+    else BEGIN                                  /* Inicio else
+        RIGHT().                                /* El robot dobla en sentido horario
+    END.                                        /* Fin else
+    if (contador == 4) BEGIN                    /* Inicio condición si contador es igual a 4
+        bandera =: True.                        /* Asignación de valores
+    END.                                        /* Fin condición
+END.                                            /* Fin ciclo while
+WAIT(3).                                        /* El robot espera 3 unidades de tiempo
+BACK().                                         /* EL robot retrocede
+SUPEREND.                                       /* Fin de programa
+

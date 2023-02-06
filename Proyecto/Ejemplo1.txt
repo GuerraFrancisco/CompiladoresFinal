@@ -1,0 +1,19 @@
+SUPERBEG.                                           /* Principio de programa
+ADD(nombreDeLibreria.extension).                    /* Librerías externas
+//* 
+--------------------------------------------------
+---------------COMENTARIO DE BLOQUE---------------
+--------------------------------------------------
+*//
+VAR (INT:MD1).                                      /* Definir variables
+VAR (INT:MD2).                                      /* Definir variables
+MD1=:3.                                             /* Asignación de valores
+MD2=:3+MD1*MD1.                                     /* Asignación de valores
+/*INICIO DE LA SECCION SETUP                        /* Comentario de línea
+PIN(MD1:OUTPUT).                                    /* Definir pin
+PIN(MD2:OUTPUT).                                    /* Definir pin
+/*FIN DE LA SECCION LOOP                            /* Comentario de línea
+FOW().                                              /* El robot puede avanzar
+LEFT().                                             /* El robot retrocede
+STOP().                                             /* El robot dobla en sentido anti horario
+SUPEREND.                                           /* Fin de programa

@@ -1,0 +1,28 @@
+SUPERBEG.                                          
+ADD(nombreDeLibreria.extension).                    
+//* 
+--------------------------------------------------
+---------------COMENTARIO DE BLOQUE---------------
+--------------------------------------------------
+*//
+VAR (INT:MD1).                                    
+VAR (INT:MD2).                                     
+MD1=:3.                                             
+MD2=:3+MD1/MD1.                                     
+--------------------------------------------------
+---------------OTRO COMENTARIO---------------
+--------------------------------------------------
+/*INICIO DE LA SECCION SETUP                        
+PIN(MD1:OUTPUT).                                    
+PIN(MD2:OUTPUT).                             
+/*FIN DE LA SECCION LOOP                        
+FOW().                                             
+LEFT().   
+FOW().
+LEFT().
+FOW().
+LEFT().
+FOW().
+LEFT().                                  
+STOP().                                         
+SUPEREND.                                   
